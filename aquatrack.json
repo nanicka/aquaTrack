@@ -1,0 +1,655 @@
+[
+    {
+        "id": "0d5f6aa92f5de943",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e4b020c686c766b3",
+        "type": "debug",
+        "z": "0d5f6aa92f5de943",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1980,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "eb427dc17140324f",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Nitrato",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"nitrato\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 680,
+        "wires": [
+            [
+                "6e396f09c545ebca"
+            ]
+        ]
+    },
+    {
+        "id": "44664f401b1859fb",
+        "type": "trigger",
+        "z": "0d5f6aa92f5de943",
+        "name": "trigger-gerarValores",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "desligar",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 630,
+        "y": 600,
+        "wires": [
+            [
+                "eb427dc17140324f",
+                "4b66cc8dc80ddbc5",
+                "3e2b5da0e96b6e9e",
+                "89af4ae16642347f"
+            ]
+        ]
+    },
+    {
+        "id": "51a094ddbfb0e156",
+        "type": "http in",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "url": "/testepost",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "44664f401b1859fb",
+                "27baa42a2c05ddd4",
+                "d76e01a9c6665f69"
+            ]
+        ]
+    },
+    {
+        "id": "4642d198200996af",
+        "type": "inject",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "desligar",
+        "payloadType": "str",
+        "x": 350,
+        "y": 360,
+        "wires": [
+            [
+                "44664f401b1859fb",
+                "27baa42a2c05ddd4",
+                "d76e01a9c6665f69"
+            ]
+        ]
+    },
+    {
+        "id": "89af4ae16642347f",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Oxigenio",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"oxigenio\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 920,
+        "y": 560,
+        "wires": [
+            [
+                "6e396f09c545ebca"
+            ]
+        ]
+    },
+    {
+        "id": "4b66cc8dc80ddbc5",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Nitrito",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"nitrito\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 740,
+        "wires": [
+            [
+                "6e396f09c545ebca"
+            ]
+        ]
+    },
+    {
+        "id": "3e2b5da0e96b6e9e",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "pH",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"ph\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 620,
+        "wires": [
+            [
+                "6e396f09c545ebca"
+            ]
+        ]
+    },
+    {
+        "id": "6e396f09c545ebca",
+        "type": "join",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "4",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1150,
+        "y": 680,
+        "wires": [
+            [
+                "e7bf8fed4230d416"
+            ]
+        ]
+    },
+    {
+        "id": "17c113a85dbdab54",
+        "type": "inject",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ligar",
+        "payloadType": "str",
+        "x": 350,
+        "y": 320,
+        "wires": [
+            [
+                "44664f401b1859fb",
+                "27baa42a2c05ddd4",
+                "d76e01a9c6665f69"
+            ]
+        ]
+    },
+    {
+        "id": "c93e5b55339667b3",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Temperatura",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"temperatura\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 460,
+        "wires": [
+            [
+                "7166266443f17a2d"
+            ]
+        ]
+    },
+    {
+        "id": "27baa42a2c05ddd4",
+        "type": "trigger",
+        "z": "0d5f6aa92f5de943",
+        "name": "trigger-amonia_temp",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "desligar",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 640,
+        "y": 560,
+        "wires": [
+            [
+                "c93e5b55339667b3",
+                "1c9c3aeebb8bc365"
+            ]
+        ]
+    },
+    {
+        "id": "1c9c3aeebb8bc365",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Amonia",
+        "func": "msg.payload = (Math.random() * (20 - 1) + 1).toFixed(2);\nmsg.payload *= 1;\nmsg.topic = \"amonia\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 400,
+        "wires": [
+            [
+                "7166266443f17a2d"
+            ]
+        ]
+    },
+    {
+        "id": "aecf81786e5dd77c",
+        "type": "comment",
+        "z": "0d5f6aa92f5de943",
+        "name": "Nodos",
+        "info": "Trocar os nodos de funcao por post",
+        "x": 650,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d291c71916855be4",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "Tempo",
+        "func": "msg.payload = {valores: msg.payload, tempo : Date.now()}\nmsg.topic = \"Pacote\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 560,
+        "wires": [
+            [
+                "66f64d5bce98d446"
+            ]
+        ]
+    },
+    {
+        "id": "ca7e115ea5f9e0e7",
+        "type": "join",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 1810,
+        "y": 560,
+        "wires": [
+            [
+                "143b83d6f52348f9",
+                "e4b020c686c766b3"
+            ]
+        ]
+    },
+    {
+        "id": "e7bf8fed4230d416",
+        "type": "join",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "mode": "custom",
+        "build": "merged",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "6",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1330,
+        "y": 560,
+        "wires": [
+            [
+                "d291c71916855be4"
+            ]
+        ]
+    },
+    {
+        "id": "7166266443f17a2d",
+        "type": "join",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1150,
+        "y": 440,
+        "wires": [
+            [
+                "e7bf8fed4230d416"
+            ]
+        ]
+    },
+    {
+        "id": "66f64d5bce98d446",
+        "type": "rbe",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "topic",
+        "topi": "topic",
+        "x": 1650,
+        "y": 560,
+        "wires": [
+            [
+                "ca7e115ea5f9e0e7"
+            ]
+        ]
+    },
+    {
+        "id": "b3d16bf779f146ca",
+        "type": "function",
+        "z": "0d5f6aa92f5de943",
+        "name": "gerarId",
+        "func": "msg.payload = {_id: (Math.random() * 9999).toFixed(0)}\nmsg.topic = \"id\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 940,
+        "y": 340,
+        "wires": [
+            [
+                "66f64d5bce98d446"
+            ]
+        ]
+    },
+    {
+        "id": "d76e01a9c6665f69",
+        "type": "trigger",
+        "z": "0d5f6aa92f5de943",
+        "name": "trigger-Id",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "-5",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "desligar",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 600,
+        "y": 340,
+        "wires": [
+            [
+                "b3d16bf779f146ca"
+            ]
+        ]
+    },
+    {
+        "id": "143b83d6f52348f9",
+        "type": "cloudantplus out",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "cloudant": "de7456ba9a517de7",
+        "database": "aquateste",
+        "service": "_ext_",
+        "payonly": true,
+        "operation": "insert",
+        "x": 1980,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "51ef35068fb4a3fe",
+        "type": "http in",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "url": "/testeget",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 350,
+        "y": 720,
+        "wires": [
+            [
+                "b247d0aec1a8d454"
+            ]
+        ]
+    },
+    {
+        "id": "13deccad417675c1",
+        "type": "http response",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 730,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "b247d0aec1a8d454",
+        "type": "cloudantplus in",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "cloudant": "de7456ba9a517de7",
+        "database": "aquateste",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 540,
+        "y": 720,
+        "wires": [
+            [
+                "13deccad417675c1"
+            ]
+        ]
+    },
+    {
+        "id": "8e5830d229fd01cb",
+        "type": "trigger",
+        "z": "0d5f6aa92f5de943",
+        "name": "trigger-desligar",
+        "op1": "desligar",
+        "op2": "",
+        "op1type": "str",
+        "op2type": "nul",
+        "duration": "250",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 320,
+        "y": 480,
+        "wires": [
+            [
+                "d76e01a9c6665f69",
+                "27baa42a2c05ddd4",
+                "44664f401b1859fb"
+            ]
+        ]
+    },
+    {
+        "id": "6e5449e605036c66",
+        "type": "http in",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "url": "/testequery",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 360,
+        "y": 820,
+        "wires": [
+            [
+                "dd1888c3a7a1554e"
+            ]
+        ]
+    },
+    {
+        "id": "dd1888c3a7a1554e",
+        "type": "cloudantplus in",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "cloudant": "de7456ba9a517de7",
+        "database": "aquateste",
+        "service": "_ext_",
+        "search": "_id_",
+        "design": "",
+        "index": "",
+        "x": 600,
+        "y": 800,
+        "wires": [
+            [
+                "5087e2b1cbfa57f8"
+            ]
+        ]
+    },
+    {
+        "id": "5087e2b1cbfa57f8",
+        "type": "debug",
+        "z": "0d5f6aa92f5de943",
+        "name": "debug 9",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "9fa3891059f7b79e",
+        "type": "inject",
+        "z": "0d5f6aa92f5de943",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"_id\":\"1470\"}",
+        "payloadType": "json",
+        "x": 370,
+        "y": 780,
+        "wires": [
+            [
+                "dd1888c3a7a1554e"
+            ]
+        ]
+    },
+    {
+        "id": "de7456ba9a517de7",
+        "type": "cloudantplus",
+        "host": "https://8685b21f-dcdc-4864-a9bc-84e5121ccc12-bluemix.cloudantnosqldb.appdomain.cloud",
+        "name": "Credencial4",
+        "useapikey": true
+    }
+]
