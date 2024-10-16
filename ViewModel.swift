@@ -9,8 +9,8 @@ import Foundation
 
 // https://medium.com/@amangupta007/swift-ios-mvvm-design-pattern-implementation-in-swift-using-api-manager-and-token-refresh-8a1d0b607599
 
-let url = URL(string: "http://10.87.154.241:1880/testeget")!
-let urlPost = URL(string: "http://10.87.154.241:1880/testepost")!
+let url = URL(string: "http://10.87.154.241:1880/aquaget")!
+let urlPost = URL(string: "http://10.87.154.241:1880/aquapost")!
 
 var request = URLRequest(url: url)
 var requestPost = URLRequest(url: urlPost)
@@ -18,6 +18,24 @@ var requestPost = URLRequest(url: urlPost)
 class ViewModel : ObservableObject {
     
     @Published var values : [Pacote] = []
+    @Published var nitrato : Float?
+    @Published var nitrito : Float?
+    @Published var ph : Int?
+    @Published var oxigenio : Float?
+    @Published var temperatura : Float?
+    @Published var amonia : Float?
+    
+    func atualizarValores() {
+        if (values.count > 0) {
+            nitrato = values.first?.valores.nitrato
+            nitrito = values.first?.valores.nitrito
+            ph = values.first?.valores.ph
+            oxigenio = values.first?.valores.oxigenio
+            temperatura = values.first?.valores.temperatura
+            amonia = values.first?.valores.amonia
+        }
+    }
+    
     
     func fetch() {
         
@@ -47,6 +65,16 @@ class ViewModel : ObservableObject {
         let task = URLSession.shared.dataTask(with: url){data, _, error in
             do {
                 self.values = try JSONDecoder().decode([Pacote].self, from: data!)
+                
+                self.values = self.values.sorted{
+                   Int($0._id)! > Int($1._id)!
+                }
+                
+                print(self.values)
+                
+                
+                self.atualizarValores()
+                
             } catch {
                 print(error)
             }

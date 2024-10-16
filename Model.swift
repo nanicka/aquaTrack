@@ -9,19 +9,18 @@ import Foundation
 
 struct Pacote : Decodable {
     let _id : String
-    let valores : Valores
-    let tempo : Int?
+    let valores : Niveis
 }
 
-struct Valores : Decodable {
+struct Niveis : Decodable {
     let nitrato : Float?
     let nitrito : Float?
-    let ph : Float?
+    let ph : Int?
     let oxigenio : Float?
     let temperatura : Float?
     let amonia : Float?
 }
 
 struct Mensagem : Encodable {
-    let pacote : Int?
+    let pacote : String?
 }
