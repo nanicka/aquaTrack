@@ -1,8 +1,0 @@
-// criar uma funcao para atualizar variaveis para cada valor
-                            // criar publisheds para cada um
-                            
-                            if (viewModel.values.count > 0) {
-                                Text("\(viewModel.values.first!.valores.oxigenio!)")
-                                    .padding(.top, -80)
-                            }
-                        }
