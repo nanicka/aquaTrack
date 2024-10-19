@@ -1,7 +1,7 @@
 # AquaTrack
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/d1b33cc1-a6ed-4b61-ae6f-f584cdca197a" alt="AquaTrack Logo" width="150"/>
+  <img src="https://github.com/user-attachments/assets/d1b33cc1-a6ed-4b61-ae6f-f584cdca197a" alt="AquaTrack Logo" width="450"/>
 </p>
 
 AquaTrack é um aplicativo de monitoramento de qualidade da água desenvolvido em **Swift** e **SwiftUI**, utilizando sensores e a tecnologia **Arduino** para coleta de dados e **Node-RED** para integração e manipulação de APIs. O projeto foi criado para oferecer uma solução prática e em tempo real para monitorar os parâmetros essenciais da água, visando a preservação do meio ambiente e a segurança de organismos aquáticos.
