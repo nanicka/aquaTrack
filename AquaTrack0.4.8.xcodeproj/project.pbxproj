@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		415203322CC195D200D91EE0 /* Tabrio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203312CC195D200D91EE0 /* Tabrio.swift */; };
+		415203342CC1966D00D91EE0 /* Tabmar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203332CC1966D00D91EE0 /* Tabmar.swift */; };
+		415203362CC1968100D91EE0 /* Tabpiscina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203352CC1968100D91EE0 /* Tabpiscina.swift */; };
+		415203382CC1972200D91EE0 /* Riohoje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203372CC1972200D91EE0 /* Riohoje.swift */; };
+		4152033A2CC1973D00D91EE0 /* Riosemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203392CC1973D00D91EE0 /* Riosemana.swift */; };
+		4152033C2CC1974700D91EE0 /* Riomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152033B2CC1974700D91EE0 /* Riomes.swift */; };
+		415203402CC1976300D91EE0 /* Marsemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4152033F2CC1976300D91EE0 /* Marsemana.swift */; };
+		415203422CC1977600D91EE0 /* Marhoje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203412CC1977600D91EE0 /* Marhoje.swift */; };
+		415203442CC1978000D91EE0 /* Marmes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203432CC1978000D91EE0 /* Marmes.swift */; };
+		415203462CC197A000D91EE0 /* piscinahoje.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203452CC197A000D91EE0 /* piscinahoje.swift */; };
+		415203482CC197B000D91EE0 /* piscinasemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203472CC197B000D91EE0 /* piscinasemana.swift */; };
+		4152034A2CC197C200D91EE0 /* piscinames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415203492CC197C200D91EE0 /* piscinames.swift */; };
+		46DD99102CB6F6640059FBFB /* AquaTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD990F2CB6F6640059FBFB /* AquaTrackApp.swift */; };
+		46DD99122CB6F6640059FBFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD99112CB6F6640059FBFB /* ContentView.swift */; };
+		46DD99142CB6F6650059FBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DD99132CB6F6650059FBFB /* Assets.xcassets */; };
+		46DD99172CB6F6650059FBFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DD99162CB6F6650059FBFB /* Preview Assets.xcassets */; };
+		661542EC2CC1799800126295 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661542EA2CC1799800126295 /* Model.swift */; };
+		661542ED2CC1799800126295 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661542EB2CC1799800126295 /* ViewModel.swift */; };
+		C44AE4B62CB7016200751370 /* Aquariosemana.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AE4B52CB7016200751370 /* Aquariosemana.swift */; };
+		C463EC402CB83BD3006B71B6 /* Aquariomes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463EC3F2CB83BD3006B71B6 /* Aquariomes.swift */; };
+		C463EC422CB83BF0006B71B6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C463EC412CB83BF0006B71B6 /* Home.swift */; };
+		C472E4C72CBECE7000A2D5B0 /* Aquariohoje.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472E4C62CBECE7000A2D5B0 /* Aquariohoje.swift */; };
+		C472E4C92CBED32F00A2D5B0 /* darkMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472E4C82CBED32F00A2D5B0 /* darkMode.swift */; };
+		C472E4CB2CBED37800A2D5B0 /* LanguageSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472E4CA2CBED37800A2D5B0 /* LanguageSettings.swift */; };
+		C472E4CF2CBEE33C00A2D5B0 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C472E4CE2CBEE33C00A2D5B0 /* Tab.swift */; };
+		C48653E52CBDAE1C00619468 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48653E42CBDAE1C00619468 /* config.swift */; };
+		C4ECFA5D2CC0425B00EF0ED2 /* Tabaquario.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ECFA5C2CC0425B00EF0ED2 /* Tabaquario.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		415203312CC195D200D91EE0 /* Tabrio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tabrio.swift; sourceTree = "<group>"; };
+		415203332CC1966D00D91EE0 /* Tabmar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabmar.swift; sourceTree = "<group>"; };
+		415203352CC1968100D91EE0 /* Tabpiscina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabpiscina.swift; sourceTree = "<group>"; };
+		415203372CC1972200D91EE0 /* Riohoje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riohoje.swift; sourceTree = "<group>"; };
+		415203392CC1973D00D91EE0 /* Riosemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riosemana.swift; sourceTree = "<group>"; };
+		4152033B2CC1974700D91EE0 /* Riomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Riomes.swift; sourceTree = "<group>"; };
+		4152033F2CC1976300D91EE0 /* Marsemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marsemana.swift; sourceTree = "<group>"; };
+		415203412CC1977600D91EE0 /* Marhoje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marhoje.swift; sourceTree = "<group>"; };
+		415203432CC1978000D91EE0 /* Marmes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marmes.swift; sourceTree = "<group>"; };
+		415203452CC197A000D91EE0 /* piscinahoje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piscinahoje.swift; sourceTree = "<group>"; };
+		415203472CC197B000D91EE0 /* piscinasemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piscinasemana.swift; sourceTree = "<group>"; };
+		415203492CC197C200D91EE0 /* piscinames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = piscinames.swift; sourceTree = "<group>"; };
+		46DD990C2CB6F6640059FBFB /* AquaTrack0.4.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquaTrack0.4.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DD990F2CB6F6640059FBFB /* AquaTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTrackApp.swift; sourceTree = "<group>"; };
+		46DD99112CB6F6640059FBFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46DD99132CB6F6650059FBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46DD99162CB6F6650059FBFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		661542EA2CC1799800126295 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		661542EB2CC1799800126295 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C44AE4B52CB7016200751370 /* Aquariosemana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aquariosemana.swift; sourceTree = "<group>"; };
+		C463EC3F2CB83BD3006B71B6 /* Aquariomes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aquariomes.swift; sourceTree = "<group>"; };
+		C463EC412CB83BF0006B71B6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C472E4C62CBECE7000A2D5B0 /* Aquariohoje.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aquariohoje.swift; sourceTree = "<group>"; };
+		C472E4C82CBED32F00A2D5B0 /* darkMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = darkMode.swift; sourceTree = "<group>"; };
+		C472E4CA2CBED37800A2D5B0 /* LanguageSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSettings.swift; sourceTree = "<group>"; };
+		C472E4CE2CBEE33C00A2D5B0 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		C48653E42CBDAE1C00619468 /* config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		C4ECFA5C2CC0425B00EF0ED2 /* Tabaquario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabaquario.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DD99092CB6F6640059FBFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DD99032CB6F6640059FBFB = {
+			isa = PBXGroup;
+			children = (
+				46DD990E2CB6F6640059FBFB /* AquaTrack */,
+				46DD990D2CB6F6640059FBFB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46DD990D2CB6F6640059FBFB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DD990C2CB6F6640059FBFB /* AquaTrack0.4.8.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DD990E2CB6F6640059FBFB /* AquaTrack */ = {
+			isa = PBXGroup;
+			children = (
+				46DD990F2CB6F6640059FBFB /* AquaTrackApp.swift */,
+				46DD99112CB6F6640059FBFB /* ContentView.swift */,
+				661542EA2CC1799800126295 /* Model.swift */,
+				661542EB2CC1799800126295 /* ViewModel.swift */,
+				46DD99132CB6F6650059FBFB /* Assets.xcassets */,
+				46DD99152CB6F6650059FBFB /* Preview Content */,
+				C44AE4B52CB7016200751370 /* Aquariosemana.swift */,
+				C463EC3F2CB83BD3006B71B6 /* Aquariomes.swift */,
+				C463EC412CB83BF0006B71B6 /* Home.swift */,
+				C48653E42CBDAE1C00619468 /* config.swift */,
+				C472E4C62CBECE7000A2D5B0 /* Aquariohoje.swift */,
+				C472E4C82CBED32F00A2D5B0 /* darkMode.swift */,
+				C472E4CA2CBED37800A2D5B0 /* LanguageSettings.swift */,
+				C472E4CE2CBEE33C00A2D5B0 /* Tab.swift */,
+				C4ECFA5C2CC0425B00EF0ED2 /* Tabaquario.swift */,
+				415203312CC195D200D91EE0 /* Tabrio.swift */,
+				415203332CC1966D00D91EE0 /* Tabmar.swift */,
+				415203352CC1968100D91EE0 /* Tabpiscina.swift */,
+				415203372CC1972200D91EE0 /* Riohoje.swift */,
+				415203392CC1973D00D91EE0 /* Riosemana.swift */,
+				4152033B2CC1974700D91EE0 /* Riomes.swift */,
+				4152033F2CC1976300D91EE0 /* Marsemana.swift */,
+				415203412CC1977600D91EE0 /* Marhoje.swift */,
+				415203432CC1978000D91EE0 /* Marmes.swift */,
+				415203452CC197A000D91EE0 /* piscinahoje.swift */,
+				415203472CC197B000D91EE0 /* piscinasemana.swift */,
+				415203492CC197C200D91EE0 /* piscinames.swift */,
+			);
+			path = AquaTrack;
+			sourceTree = "<group>";
+		};
+		46DD99152CB6F6650059FBFB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46DD99162CB6F6650059FBFB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DD990B2CB6F6640059FBFB /* AquaTrack0.4.8 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DD991A2CB6F6650059FBFB /* Build configuration list for PBXNativeTarget "AquaTrack0.4.8" */;
+			buildPhases = (
+				46DD99082CB6F6640059FBFB /* Sources */,
+				46DD99092CB6F6640059FBFB /* Frameworks */,
+				46DD990A2CB6F6640059FBFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaTrack0.4.8;
+			productName = AquaTrack;
+			productReference = 46DD990C2CB6F6640059FBFB /* AquaTrack0.4.8.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46DD99042CB6F6640059FBFB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					46DD990B2CB6F6640059FBFB = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 46DD99072CB6F6640059FBFB /* Build configuration list for PBXProject "AquaTrack0.4.8" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46DD99032CB6F6640059FBFB;
+			productRefGroup = 46DD990D2CB6F6640059FBFB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DD990B2CB6F6640059FBFB /* AquaTrack0.4.8 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DD990A2CB6F6640059FBFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DD99172CB6F6650059FBFB /* Preview Assets.xcassets in Resources */,
+				46DD99142CB6F6650059FBFB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DD99082CB6F6640059FBFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C472E4C92CBED32F00A2D5B0 /* darkMode.swift in Sources */,
+				C44AE4B62CB7016200751370 /* Aquariosemana.swift in Sources */,
+				46DD99122CB6F6640059FBFB /* ContentView.swift in Sources */,
+				4152034A2CC197C200D91EE0 /* piscinames.swift in Sources */,
+				661542EC2CC1799800126295 /* Model.swift in Sources */,
+				415203442CC1978000D91EE0 /* Marmes.swift in Sources */,
+				415203422CC1977600D91EE0 /* Marhoje.swift in Sources */,
+				4152033C2CC1974700D91EE0 /* Riomes.swift in Sources */,
+				415203322CC195D200D91EE0 /* Tabrio.swift in Sources */,
+				415203382CC1972200D91EE0 /* Riohoje.swift in Sources */,
+				C472E4CB2CBED37800A2D5B0 /* LanguageSettings.swift in Sources */,
+				C463EC402CB83BD3006B71B6 /* Aquariomes.swift in Sources */,
+				661542ED2CC1799800126295 /* ViewModel.swift in Sources */,
+				C4ECFA5D2CC0425B00EF0ED2 /* Tabaquario.swift in Sources */,
+				415203362CC1968100D91EE0 /* Tabpiscina.swift in Sources */,
+				415203462CC197A000D91EE0 /* piscinahoje.swift in Sources */,
+				C472E4C72CBECE7000A2D5B0 /* Aquariohoje.swift in Sources */,
+				415203342CC1966D00D91EE0 /* Tabmar.swift in Sources */,
+				4152033A2CC1973D00D91EE0 /* Riosemana.swift in Sources */,
+				415203482CC197B000D91EE0 /* piscinasemana.swift in Sources */,
+				46DD99102CB6F6640059FBFB /* AquaTrackApp.swift in Sources */,
+				C472E4CF2CBEE33C00A2D5B0 /* Tab.swift in Sources */,
+				C48653E52CBDAE1C00619468 /* config.swift in Sources */,
+				C463EC422CB83BF0006B71B6 /* Home.swift in Sources */,
+				415203402CC1976300D91EE0 /* Marsemana.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		46DD99182CB6F6650059FBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46DD99192CB6F6650059FBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46DD991B2CB6F6650059FBFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AquaTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = G4HUNVN8GU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Japa.AquaTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46DD991C2CB6F6650059FBFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AquaTrack/Preview Content\"";
+				DEVELOPMENT_TEAM = G4HUNVN8GU;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Japa.AquaTrack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DD99072CB6F6640059FBFB /* Build configuration list for PBXProject "AquaTrack0.4.8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DD99182CB6F6650059FBFB /* Debug */,
+				46DD99192CB6F6650059FBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DD991A2CB6F6650059FBFB /* Build configuration list for PBXNativeTarget "AquaTrack0.4.8" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DD991B2CB6F6650059FBFB /* Debug */,
+				46DD991C2CB6F6650059FBFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46DD99042CB6F6640059FBFB /* Project object */;
+}
