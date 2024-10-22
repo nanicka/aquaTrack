@@ -28,3 +28,16 @@ Este projeto foi desenvolvido como parte do **curso Hackatruck**, oferecido pelo
 - **Arduino**: Utilizado para conectar os sensores que monitoram a qualidade da água.
 - **Node-RED**: Utilizado para criar a API responsável por enviar os dados dos sensores para o app.
 - **IBM Cloudant**: Banco de dados em nuvem para armazenar os dados monitorados.
+
+## Telas
+<p align="center">
+<img src="https://github.com/user-attachments/assets/ec01107a-c056-417a-a65d-38b0ad07b50a" alt="Telas" width=60%/>
+</p>
+
+
+## Funcionamento
+
+https://github.com/user-attachments/assets/3e1de329-0e7d-4194-b961-fb95be36353a
+
+
+
